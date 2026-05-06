@@ -31,3 +31,27 @@ python scripts/download_data.py
 python scripts/train.py --config configs/base.yaml
 python scripts/generate.py --prompt "Hello"
 ```
+
+## Development workflow
+
+- Bekerja di branch `development` untuk fitur dan perbaikan.
+- Buat branch fitur baru dari `development`, lalu buka pull request ke `development`.
+- Jalankan tes lokal:
+
+```bash
+python -m pytest
+```
+
+- Gunakan `Makefile` untuk perintah umum:
+
+```bash
+make install
+make test
+make lint
+make download-data
+make train
+make generate
+```
+
+- Setelah `development` stabil, merge ke `main`.
+

@@ -1,0 +1,1 @@
+This is a small sample dataset for llm-from-scratch. It contains simple text for tokenizer and model experiments.
